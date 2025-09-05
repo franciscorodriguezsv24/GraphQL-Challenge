@@ -1,20 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 $black: #121212;
-$gray: #F2F2F2;
-$red: #EC5757;
+$gray: #f2f2f2;
+$red: #ec5757;
 $balc-icon: #000000;
 
 :root {
-    --primary-bg: #ffffff;
-    --primary-text: #333333;
-    --second-text:#828282;
-
+  --primary-bg: #ffffff;
+  --primary-text: #333333;
+  --second-text: #828282;
 }
 
 [data-theme="dark"] {
-    --primary-bg: #464c61;
-    --primary-text: #CCCCCC;
-    --second-text:#ffffff;
-
+  --primary-bg: #464c61;
+  --primary-text: #cccccc;
+  --second-text: #ffffff;
 }

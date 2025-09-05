@@ -1,4 +1,4 @@
-@use './styles/global' as *;
+@use "./styles/global" as *;
 
 #root {
   min-height: 100%;
@@ -29,10 +29,9 @@
   font-family: "Inter", sans-serif;
   height: 100vh;
   width: 100%;
-  
 }
 
-.navbar{
+.navbar {
   background: $black;
   width: 100%;
   color: $gray;
