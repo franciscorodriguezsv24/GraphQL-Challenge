@@ -73,8 +73,6 @@ export const CharacterInfo = () => {
       </div>
     );
 
-  console.log(data, id);
-
   const character = data?.character;
 
   if (!data?.character) return <Preview />;
