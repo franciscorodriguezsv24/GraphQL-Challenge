@@ -1,0 +1,117 @@
+@use "../../styles/global" as *;
+
+.characterInfoContainer {
+  background: var(--primary-bg);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.generalInfo {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 3rem;
+  gap: 1rem;
+}
+
+.generalInfo h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.containerInfo {
+  border-bottom: 2px solid $gray;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+}
+
+.containerInfoImg {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.titleInfo {
+  color: var(--second-text);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.infoText {
+  color: var(--primary-text);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.episodesContainer {
+  width: 80%;
+}
+
+.episodesContainer h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+.imgLogo {
+  width: 200px;
+}
+
+.pendingData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgCharacter {
+  width: 150px;
+  object-fit: contain;
+  grid-row: span 2; // 👈 ocupa dos filas
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.imgContainer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: start;
+  width: 100%;
+}
+
+.loadingCharanter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.loadingCharanter img {
+  width: 30px;
+  height: 30px;
+}
+
+.errorHandle {
+  color: $red;
+  font-size: 17px;
+  font-weight: 700;
+}
