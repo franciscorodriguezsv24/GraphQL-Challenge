@@ -100,15 +100,17 @@ export const Sidebar = () => {
           </button>
         );
       })}
-      <div ref={loaderRef} className={styles.loader}>
+      <div ref={loaderRef}>
         {loading && (
-          <div className={styles.spinnerContainer}>
-            <img
-              src={loadingSpinner}
-              alt="loading"
-              className={styles.spinnerIcon}
-            />
-            <p className={styles.spinnerText}>Loading</p>
+          <div className={styles.loader}>
+            <div className={styles.spinnerContainer}>
+              <img
+                src={loadingSpinner}
+                alt="loading"
+                className={styles.spinnerIcon}
+              />
+              <p className={styles.spinnerText}>Loading</p>
+            </div>
           </div>
         )}
       </div>
