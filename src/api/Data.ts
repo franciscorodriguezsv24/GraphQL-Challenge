@@ -8,13 +8,11 @@ export const client = new ApolloClient({
         fields: {
           characters: {
             keyArgs: false,
-            merge(existing = { results: [] }, incoming) {
+            merge(existing = { results: [], info: {} }, incoming) {
               return {
-                info: {
-                ...existing.info,
-                ...incoming.info,
-                },
+                ...incoming,
                 results: [...(existing.results || []), ...incoming.results],
+                info: incoming.info,
               };
             },
           },

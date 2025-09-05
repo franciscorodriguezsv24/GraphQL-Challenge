@@ -1,58 +1,83 @@
-@use '../../styles/global' as *;
+@use "../../styles/global" as *;
 
-.container{
+.container {
   height: 100%;
   border-right: 2px solid $gray;
   overflow: scroll;
 }
 
-.cardContent{
-    border: none;
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 10px 0px 10px;
-    align-items: center;
-    border-bottom: 2px solid $gray;
-    transition: 0.2s ease-out;
-    background: var(--primary-bg);
-    cursor: pointer;
-
+.cardContent {
+  border: none;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0px 10px;
+  align-items: center;
+  border-bottom: 2px solid $gray;
+  transition: 0.2s ease-out;
+  background: var(--primary-bg);
+  cursor: pointer;
 }
 
-.cardContent:hover{
-    transition: 0.2s ease-in;
-    background: $gray;
+.cardContent:hover {
+  transition: 0.2s ease-in;
+  background: $gray;
 }
 
-.textTitle{
-    font-size: 17px;
-    font-weight: 700;
-    color: var(--primary-text);
+.textTitle {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--primary-text);
 }
 
-.textSubtitle{
-    font-size: 14px;
-    font-weight: 400;
-    color: var(--second-text);
+.textSubtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--second-text);
 }
 
-.textContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    gap: 3px;
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 3px;
 }
 
-.iconCard{
-    width: 24px;
-    height: 24px;
+.iconCard {
+  width: 24px;
+  height: 24px;
 }
 
-.errorHandle{
-    color: $red;
-    font-size: 17px;
-    font-weight: 700;
+.errorHandle {
+  color: $red;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.spinner {
+  display: block;
+  margin: 0 auto;
+  border-color: red;
+}
+
+.spinnerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.spinnerIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.loader {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
